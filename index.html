@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="An FPress Site">
+		<title>An FPress Site - Home</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<!-- The navbar links are reversed -->
+		<div class="nav">
+			<a href="#" class="logo">FPress</a>
+			<a href="#">Blog</a>
+			<a href="#" class="active">Home</a>
+		</div>
+		<div>
+			<h1 class="landing-header">A Framework for a New Era</h1>
+			<p class="landing-paragraph">I'm baby yr distillery kinfolk typewriter portland ethical cornhole, hoodie vinyl pok pok dreamcatcher quinoa. Bicycle rights lyft lomo beard.</p>
+			<h2 class="recent-posts-header">Recent Posts</h2>
+			<div class="recent-posts">
+				<div class="recent-posts-card">
+					<h3>Example Post</h3>
+					<p>I'm baby try-hard pop-up chambray fam, swag vinyl vape banjo bushwick poutine pork belly polaroid single-origin coffee taiyaki. Paleo wayfarers marfa bespoke jianbing actually iPhone flannel pabst godard squid chia meh tumblr poutine.</p>
+				</div>
+				<div class="recent-posts-card">
+					<h3>Example Post</h3>
+					<p>I'm baby gluten-free glossier kickstarter stumptown neutra, fashion axe fanny pack pop-up. Jianbing XOXO artisan mumblecore YOLO thundercats.</p>
+				</div>
+				<div class="recent-posts-card">
+					<h3>Example Post</h3>
+					<p>I'm baby jianbing messenger bag brunch, poutine vape master cleanse swag brooklyn. 8-bit jianbing affogato normcore intelligentsia keffiyeh you probably haven't heard of them kombucha four loko vinyl sriracha pickled.</p>
+				</div>
+			</div>
+			<span id="search-box"></span>
+		</div>
+		<div class="footer">
+			<p>Copyright &copy;<span id="year"><noscript>2021</noscript></span> SpaceNeb — Proudly Powered by <a href="https://github.com/spaceneb/fpress-passionfruit" target="_blank">FPress</a></p>
+		</div>
+		<script>
+			var d = new Date();
+			document.getElementById('year').innerHTML = d.getFullYear();
+			document.getElementById('search-box').innerHTML = '<input type="text" id="search-blog">';
+</script>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
