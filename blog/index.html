@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="An FPress Site">
+		<title>An FPress Site - Home</title>
+		<link rel="stylesheet" href="../style.css">
+	</head>
+	<body>
+		<!-- The navbar links are reversed -->
+		<div class="nav">
+			<a href="#" class="logo">FPress</a>
+			<a href="#" class="active">Blog</a>
+			<a href="#">Home</a>
+		</div>
+		<div>
+			<span id="search-box"></span>
+			<ul id="posts">
+				<li>
+					<a href="#">
+						<div class="post-card">
+							<h3>Example Post</h3>
+							<p>I'm baby gluten-free glossier kickstarter stumptown neutra, fashion axe fanny pack pop-up. Jianbing XOXO artisan mumblecore YOLO thundercats.</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		<div class="footer">
+			<p>Copyright &copy;<span id="year"><noscript>2021</noscript></span> SpaceNeb — Proudly Powered by <a href="https://github.com/spaceneb/fpress-passionfruit" target="_blank">FPress</a></p>
+		</div>
+		<script>
+			var d = new Date();
+			document.getElementById('year').innerHTML = d.getFullYear();
+			document.getElementById('search-box').innerHTML = '<input type="text" id="search-blogs" placeholder="Search">';
+</script>
+		<script type="text/javascript" src="../script.js"></script>
+	</body>
+</html>
