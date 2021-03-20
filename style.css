@@ -164,17 +164,20 @@ a, a:link, a:visited, a:active {
 }
 .recent-posts-card:hover, .post-card:hover {
 	background: var(--lesser);
-	-webkit-transform: scale(1.1);
-  	transform: scale(1.1);
+	-webkit-transform: scale(0.9);
+  	transform: scale(0.9);
+  	padding: 0.5em;
+	margin: 1em;
 }
 .footer {
-	overflow: hidden;
 	padding-top: 1.5em;
-	padding-bottom: 1.5em;
 	width: 100%;
-	height: 3em;
 	text-align: center;
 	font-size: 1.3em;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	height: 3rem;
 }
 #search-blog, #search-blogs {
 	font-size: 1.2em;
@@ -199,4 +202,9 @@ a, a:link, a:visited, a:active {
 	margin: 0 auto;
 	display: flex;
 }
+.content {
+	padding: 0 3em 0 3em;
+}
+
+
 
